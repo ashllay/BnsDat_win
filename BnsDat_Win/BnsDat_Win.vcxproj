@@ -14,6 +14,7 @@
     <ProjectGuid>{11E11868-6306-4A2E-BD72-66BE5F66E21D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>BnsDat_Win</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -41,13 +42,14 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\wxWidgets-3.1.0\include\;C:\wxWidgets-3.1.0\lib\vc_lib\mswu\;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\wxWidgets-3.1.0\lib\vc_lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\wxWidgets-3.1.0\include\;C:\wxWidgets-3.1.0\lib\vc_lib\mswu\;..\openssl\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\wxWidgets-3.1.0\lib\vc_lib;..\openssl\lib\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>C:\wxWidgets-3.1.0\include\;C:\wxWidgets-3.1.0\lib\vc_lib\mswu\;..\openssl\include\;$(IncludePath)</IncludePath>
     <LibraryPath>C:\wxWidgets-3.1.0\lib\vc_lib;..\openssl\lib\;$(LibraryPath)</LibraryPath>
+    <TargetName>Bnsdat</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
